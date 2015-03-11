@@ -1,0 +1,24 @@
+.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+	.container
+		.navbar-header
+			button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+				span.sr-only Toggle navigation
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			a.navbar-brand(href='#')= branding
+		.collapse.navbar-collapse
+			ul.nav.navbar-nav
+				li.active
+					a(href='/') Home
+			ul.nav.navbar-nav.navbar-right
+				li.dropdown
+					a(href="#",class="dropdown-toggle",data-toggle="dropdown") Advanced
+						span(class="caret")
+					ul.dropdown-menu(role="menu")
+						li
+							a(href='/api/counts/') Counts API
+						li
+							a(href='/api/counts/') Sentence API
+						li
+							a(href='/api/counts/') Stats API
